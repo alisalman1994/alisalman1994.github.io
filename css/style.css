@@ -13,11 +13,15 @@ html {
     overflow-x: hidden;
 }
 
-body {
+body:not(.video_text) {
     color: #767676;
     -webkit-font-smoothing: antialiased;
     width: 100%;
     color:#9da6ac;
+}
+.video_text{
+	    color:#ccc;
+
 }
 /*==========================================
 PRE LOADER 
@@ -354,11 +358,13 @@ p.bannerDescription{
 	-o-transform: scale(1.3);
 
 }
+
+
 /* works content */
 
 
 .works_content{
-    padding: 150px 0px 40px 0px;
+    padding: 130px 0px 40px 0px;
 	overflow:hidden;
 }
 .single_works_text{
@@ -383,8 +389,6 @@ p.bannerDescription{
 }
 
 
-ight: 200;
-}
 /* works_2 */
 
 #works_2{}
@@ -471,6 +475,10 @@ div h3 {
 #video_icon{
 	background:url(../images/headbg.jpg);
 	background-size:cover;
+	font-color: rgba(250,250,250);
+}
+.video_icon p{
+	font-color : rgba(250,250,250);
 }
 .video_text h5{
 	color:#fff;
